@@ -1,2 +1,4 @@
 # ignore all vs code configs
 .vscode/
+# ignore all temporary editing files
+*.swp
