@@ -36,9 +36,5 @@ http.createServer((req, res) => {
         });
     }
 }).listen(portWrite, hostname, () => {
-<<<<<<< HEAD
     console.log('Server Running!');
-=======
-    console.log('Server Running great!');
->>>>>>> origin/master
 });
