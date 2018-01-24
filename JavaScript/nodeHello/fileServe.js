@@ -9,11 +9,11 @@ const portWrite = '3003';
 
 // Server to read pdf
 const server = http.createServer((req, res) => {
-    fs.readFile('C:/Users/Thomas/Downloads/GS1_System_Architecture.pdf', (err, data) => {
+    fs.readFile('C:/Users/Strei/Downloads/Video-2017-11-04-19-02-58_2614.MOV', (err, data) => {
 
         // {Content... } creates an Object [object literal syntax], as writeHead is definied in TS and 
         // has an optional parameter of type interface OutgoingHttpHeaders 
-        res.writeHead(200, { 'Conent-Type': 'application/pdf' });
+        res.writeHead(200, { 'Conent-Type': 'video/quicktime' });
         res.write(data);
         res.end();
     });
