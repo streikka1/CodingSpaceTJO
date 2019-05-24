@@ -38,27 +38,4 @@ http.createServer((req, res) => {
     }
 }).listen(portWrite, hostname, () => {
     console.log('Server Running!');
-<<<<<<< HEAD
-=======
-});
-
-//server to get start html as request in url param
-http.createServer((req, res) => {
-    let query = url.parse(req.url, true);
-    // "." um auf Verzeichnes dieses JavaScript Files zu zeigen
-    let filename = 'JavaScript/nodeHello/' + query.pathname; 
-    fs.readFile(filename, (err, data) => {
-        if (err) {
-            res.writeHead(404, {'Content-Type': 'text/html'});
-            return res.end(`404 Not Found file ${filename}`);
-            //throw err;
-        }
-        res.writeHead(200, { 'Conent-Type': 'text/html' });
-        res.write(data);
-        res.end();
-    });
-
-}).listen(portHelloHtml, hostname, () => {
-    console.log(`Server Running at ${portHelloHtml}`);
->>>>>>> hotfixExample
 });
